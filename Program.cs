@@ -16,6 +16,7 @@ namespace CollectionDemo
             CollectionSample.ListDemo();
             CollectionSample.DictionaryDemo();
             CollectionSample.StackDemo();
+            CollectionSample.queueDemo();
         }
     }
 }
