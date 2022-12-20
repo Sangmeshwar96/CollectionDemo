@@ -13,6 +13,7 @@ namespace CollectionDemo
         {
             Console.WriteLine("Welcome to C# collection!");
             CollectionSample.setDemo();
+            CollectionSample.ListDemo();
         }
     }
 }
