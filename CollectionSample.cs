@@ -73,6 +73,28 @@ namespace CollectionsDemo
             }
             Console.WriteLine($"\nPoped element: {pop}");
         }
-
+        public static void queueDemo()
+        {
+            Console.WriteLine("\nIn QueueDemo Data :\n");
+            Queue<string> queue = new Queue<string>();
+            queue.Enqueue("Amit sharma");
+            queue.Enqueue("Vijay Raj");
+            queue.Enqueue("Ral");
+            queue.Enqueue("Jaishankar");
+            Console.WriteLine($"\nHere: {queue.Peek()}\n");
+            Console.WriteLine("\nInteracting the queue elements : \n");
+            foreach (var element in queue)
+            {
+                Console.WriteLine(element);
+            }
+            string dequeue = queue.Dequeue();
+            Console.WriteLine($"\nDequeue element: {dequeue}\n");
+            Console.WriteLine("\nInteracting the queue elements after dequeue one element :\n");
+            Queue<string>.Enumerator enumerator = queue.GetEnumerator();
+            while (enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current);
+            }
+        }
     }
 }
