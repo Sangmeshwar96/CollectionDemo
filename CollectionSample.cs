@@ -35,8 +35,26 @@ namespace CollectionsDemo
             {
                 Console.WriteLine(element);
             }
-            Console.WriteLine(list[1
-                ]);
+            Console.WriteLine(list[1]);
+        }
+        public static void DictionaryDemo()
+        {
+            Console.WriteLine("\nIn DictionaryDemo Data :\n");
+            Dictionary<int, string> dictionary = new Dictionary<int, string>();
+            dictionary.Add(100, "Amit");
+            dictionary.Add(101, "Rahul");
+            dictionary.Add(102, "Vijay");
+            Console.WriteLine($"Access value using key(key=100): {dictionary[100]}");
+            Console.WriteLine("\nInteracting Dictionary\n");
+            foreach (var element in dictionary)
+            {
+                Console.WriteLine($"keys ={element.Key} & value ={element.Value}");
+            }
+            Dictionary<int, string>.Enumerator obj = dictionary.GetEnumerator();
+            while (obj.MoveNext())
+            {
+                Console.WriteLine("\n"+obj.Current);
+            }
         }
 
     }
