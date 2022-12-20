@@ -56,6 +56,23 @@ namespace CollectionsDemo
                 Console.WriteLine("\n"+obj.Current);
             }
         }
+        public static void StackDemo()
+        {
+            Console.WriteLine("\nIn doStackDemo Data :\n");
+            Stack<string> stack = new Stack<string>();
+            stack.Push("Ayush");
+            stack.Push("Garvit");
+            stack.Push("Amit");
+            stack.Push("Ashish");
+            stack.Push("Garina");
+            stack.Push("Ayush");
+            string pop = stack.Pop();
+            foreach (var element in stack)
+            {
+                Console.WriteLine(element);
+            }
+            Console.WriteLine($"\nPoped element: {pop}");
+        }
 
     }
 }
