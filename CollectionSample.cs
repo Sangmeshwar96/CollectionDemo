@@ -23,6 +23,21 @@ namespace CollectionsDemo
                 Console.WriteLine(enumerator.Current);
             }
         }
+        public static void ListDemo()
+        {
+            Console.WriteLine("\nIn ListDemo Data :\n");
+            List<string> list = new List<string>();
+            list.Add("Ravi");
+            list.Add("Vijay");
+            list.Add("Ravi");
+            list.Add("Ajay");
+            foreach (var element in list)
+            {
+                Console.WriteLine(element);
+            }
+            Console.WriteLine(list[1
+                ]);
+        }
 
     }
 }
